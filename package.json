@@ -1,0 +1,22 @@
+{
+  "name": "deploy-nft-collection",
+  "version": "1.0.0",
+  "description": "NFT ERC721 Deployment + Metadata on IPFS",
+  "main": "deploy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starton-io/Deploy-NFT-collection.git"
+  },
+  "author": "Starton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/starton-io/Deploy-NFT-collection/issues"
+  },
+  "homepage": "https://github.com/starton-io/Deploy-NFT-collection#readme",
+  "dependencies": {
+    "axios": "^1.0.0"
+  }
+}
