@@ -1,24 +1,29 @@
 const axios = require("axios")
 
-const http = axios.create({
-    baseURL: "https://api.starton.io/v2",
-    headers: {
-        "x-api-key": 'YOUR API KEY',
-    },
+const axiosInstance = axios.create({
+	baseURL: "https://api.starton.io",
+	headers: {
+		"x-api-key": "YOUR_API_KEY",
+	},
 })
-http.post( '/smart-contract/from-template',
- {
-        "network": 'polygon-mumbai',
-        "name": 'NFT collection test',
-        "templateId": 'sct_e851adefe4494fc991207b2c37ed8a83',
-        "signerWallet": "YOUR KMS ADDRESS",
-        "speed": "low",
-        "params": [
-            'Bored Burger Yacht Club',
-            'BBYC',
-            'ipfs://ipfs/',
-            'Image CID',
-            'YOUR KMS ADDRESS'
-        ]
 
- }).then(response => { console.log(response.data) })
+axiosInstance.post(
+	"/v3/smart-contract/from-template",
+	{
+		network: "polygon-mumbai",
+		signerWallet: "WALLET",  // The Wallet that will pay for the gaz fees
+		templateId: "ERC721_META_TRANSACTION",  //Smart contract template ID
+		name: "PROJECT_NAME",
+		description: "PROJECT_DESCRIPTION",
+		params: [
+			"SMART_CONTRACT_NAME",
+			"SYMBOL",
+			"ipfs://ipfs/",
+			"FILE_CID",
+			"OWNER_WALLET"
+		],
+		speed: "average"
+	}
+).then((response) => {
+	console.log(response.data)
+})

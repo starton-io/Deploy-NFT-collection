@@ -1,19 +1,23 @@
- const axios = require("axios")
+const axios = require("axios")
 
-const http = axios.create({
-    baseURL: "https://api.starton.io/v2",
-    headers: {
-        "x-api-key": 'YOUR API KEY',
-    },
+const axiosInstance = axios.create({
+	baseURL: "https://api.starton.io",
+	headers: {
+		"x-api-key": "YOUR_API_KEY",
+	},
 })
-http.post('/smart-contract/polygon-mumbai/0x8A7b7DE8fDbB9652A820FCc85c3dA3b1D9986FE7/call',
-    {
-        "functionName": 'safeMint(address,string)',
-        "signerWallet": 'YOUR KMS ADDRESS',
-        "speed": "low",
-        "params": [
-            'RECEIVER ADDRESS',
-            'IMAGE CID'
-        ],
 
-    }).then(response => { console.log(response.data) })
+axiosInstance.post(
+	"/v3/smart-contract/polygon-mumbai/SMART_CONTRACT_ADDRESS/call",
+	{
+		functionName: "mint(address,string)",
+		params: [
+			"RECIPIENT_ADDRESS",
+			"FILE_CID"
+		],
+		signerWallet: "SMART_CONTRACT_OWNER_WALLET",
+		speed: "average"
+	}
+).then((response) => {
+	console.log(response.data)
+})

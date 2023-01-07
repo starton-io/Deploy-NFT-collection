@@ -1,0 +1,20 @@
+{
+	"name": "NFT name",
+	"description": "NFT description",
+	"external_url": "https://starton.io",
+	"image": "ipfs://ipfs/IMAGE_CID",
+	"attributes": [
+		{
+			"trait_type": "Creator",
+			"value": "starton.io"
+		},
+		{
+			"trait_type": "Role",
+			"value": "Builder"
+		},
+		{
+			"trait_type": "Author",
+			"value": "Vitalik"
+		}
+	]
+}
