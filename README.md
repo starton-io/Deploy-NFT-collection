@@ -14,9 +14,7 @@ Deploy your own ERC721 NFT collection + Metadata Exemple with Starton.io and IPF
 - Deploy.js: Code Snippet to deploy your smart contract
 - Mint.js: Code Snippet to mint your NFT
 
-## Tech
-
-Dillinger uses a number of open source projects to work properly:
+## Tech Stack
 
 - [STARTON](https://app.starton.io/)
 - [AXIOS](https://www.npmjs.com/package/axios)
@@ -24,7 +22,7 @@ Dillinger uses a number of open source projects to work properly:
 
 ## Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+Requires [Node.js](https://nodejs.org/) v10+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
