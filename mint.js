@@ -1,7 +1,7 @@
 const axios = require("axios")
 
 const axiosInstance = axios.create({
-	baseURL: "https://api.starton.io",
+	baseURL: "https://api.starton.com",
 	headers: {
 		"x-api-key": "YOUR_API_KEY",
 	},

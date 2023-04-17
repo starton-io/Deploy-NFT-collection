@@ -2,7 +2,7 @@
 	"name": "My super collection",
 	"description": "An awesome collection of NFT",
 	"image": "ipfs://ipfs/IMAGE_CID",
-	"external_link": "https://starton.io",
+	"external_link": "https://starton.com",
 	"seller_fee_basis_points": 200,
 	"fee_recipient": "YOUR WALLET ADDRESS THAT WILL RECEIVE THE FEES" 
 }

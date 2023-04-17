@@ -1,12 +1,12 @@
 {
 	"name": "NFT name",
 	"description": "NFT description",
-	"external_url": "https://starton.io",
+	"external_url": "https://starton.com",
 	"image": "ipfs://ipfs/IMAGE_CID",
 	"attributes": [
 		{
 			"trait_type": "Creator",
-			"value": "starton.io"
+			"value": "starton.com"
 		},
 		{
 			"trait_type": "Role",
