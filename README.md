@@ -1,13 +1,13 @@
 # Starton Exemples
 ## Code Snippets to deploy NFT Collection
 
-Deploy your own ERC721 NFT collection + Metadata Exemple with Starton.io and IPFS
+Deploy your own ERC721 NFT collection + Metadata Exemple with starton.com and IPFS
 
 ## Ressources
 
-- [Website](https://www.starton.io/)
-- [Documentation](https://docs.starton.io/)
-- [Tutorials](https://docs.starton.io/docs/Tutorials/Home)
+- [Website](https://www.starton.com/)
+- [Documentation](https://docs.starton.com/)
+- [Tutorials](https://docs.starton.com/docs/Tutorials/Home)
 
 ## Features
 
@@ -16,7 +16,7 @@ Deploy your own ERC721 NFT collection + Metadata Exemple with Starton.io and IPF
 
 ## Tech Stack
 
-- [STARTON](https://app.starton.io/)
+- [STARTON](https://app.starton.com/)
 - [AXIOS](https://www.npmjs.com/package/axios)
 - [NODEJS](https://nodejs.org/en/)
 
